@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Chat!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "root">
+        <div id="chat-box">
+            <div class = "title-bar">
+                <div class = "person">Echo</div>
+                <div id = "status">OFFLINE</div>
+            </div>
+            <div class = "messages"></div>
+            <div class = "message-bar">
+                
+
+                <form onsubmit="return false">
+                    <input  type="text" id = "message-input" name="message" placeholder="Type a message..." />
+                    <button type = "submit" id="submit-message" onclick="sendMsg()">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="client.js"></script>
+</html>
